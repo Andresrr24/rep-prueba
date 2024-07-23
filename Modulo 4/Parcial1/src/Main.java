@@ -61,7 +61,7 @@ public class Main {
                     System.out.println("Opcion no valida");
             }
 
-        } while (!opcion.equals("4"));
+        } while (!opcion.equals("5"));
 
         scanner.close();
     }
