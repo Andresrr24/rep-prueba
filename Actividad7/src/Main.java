@@ -22,13 +22,14 @@ public class Main {
             System.out.println("3. Triángulo");
             System.out.println("4. Círculo");
             System.out.println("5. Pentágono");
-            System.out.println("6. Salir");
+            System.out.println("6. Selección de área, perímetro o potenciación");
             System.out.print("Opción: ");
             opcion = scanner.nextLine();
 
             System.out.println("1. Área");
             System.out.println("2. Perímetro");
-            System.out.println("3. Salir");
+            System.out.println("3. Potenciación");
+            System.out.println("4. Salir");
             System.out.print("Opción: ");
             opcion1 = scanner.nextLine();
 
@@ -76,6 +77,15 @@ public class Main {
                     scanner.nextLine();
                     break;
                 case ("6:3"):
+                    System.out.println("Potencia");
+                    System.out.print("Base: ");
+                    double base = scanner.nextDouble();
+                    System.out.print("Exponente: ");
+                    double exponente = scanner.nextDouble();
+                    double resultado = Math.pow(base, exponente);
+                    System.out.println(base + "elevado a " + exponente + "es: " + resultado );
+                    break;
+                case ("6:4"):
                     System.out.println("Salir");
                     break;
                 default:
